@@ -1,0 +1,42 @@
+.faq {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+.title{
+    color: var(--main-blue-color);
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 2.5rem;
+    width: 90vw;
+    text-align: center;
+}
+.leftScreen,
+.rightScreen {
+    width: 90vw;
+    text-align: justify;
+}
+.more{
+    width: 1.5rem;
+    margin: 0.2rem;
+}
+.question {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 1rem 0;
+}
+.answer{
+    font-size: 15px;
+    margin-bottom: 1.5rem;
+    /* display: none; */
+}
+
+.legend {
+    display: table;
+    white-space:nowrap;
+    font-size: 12px;
+}
