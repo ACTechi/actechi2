@@ -1,0 +1,10 @@
+.button {
+    background-color: var(--main-blue-color);
+    color: var(--main-white-color);
+    border: none;
+}
+
+.button:hover {
+    box-shadow: 3px 7px 4px 0px #00000040;
+    background-color: var(--main-blue-color);
+}

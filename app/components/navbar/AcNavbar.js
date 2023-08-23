@@ -5,6 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
 
 import styles from './AcNavbar.module.css'
+import GetEstimate from './GetEstimate/GetEstimate';
 
 function AcNavbar() {
   return (
@@ -36,9 +37,7 @@ function AcNavbar() {
           </Nav>
         </Navbar.Collapse>
           <Nav>
-            <Nav.Link href='/form'>
-          <Button variant="primary" className={styles.button}>Get Estimate</Button>{' '}
-          </Nav.Link>
+            <GetEstimate />
           </Nav>
       </Container>
     </Navbar>
