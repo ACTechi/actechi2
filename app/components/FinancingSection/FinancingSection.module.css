@@ -1,0 +1,106 @@
+.financing {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+}
+
+.title {
+    color: var(--main-blue-color);
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 1rem;
+    width: 90vw;
+}
+
+.green {
+    background-color: var(--main-green-color);
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 0.7rem 0.5rem;
+    color: var(--main-white-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.noCreditImpact {
+    color: var(--main-black-color);
+    font-size: 18px;
+    width: 97vw;
+    margin-bottom: 0.5rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.image {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    margin-bottom: 1rem;
+}
+
+.beforeLegend {
+    text-align: justify;
+    margin: 1rem 0;
+    width: 93.5vw;
+    font-weight: bold;
+}
+
+.legend {
+    color: var(--main-grey-color);
+    text-align: justify;
+    font-style: italic;
+    width: 93.5vw;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .green {
+        font-size: 22px;
+    }
+
+    .noCreditImpact {
+        font-size: 20px;
+        width: 80vw;
+    }
+
+    .beforeLegend,
+    .legend {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .financing {
+        margin: 10% 0;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .green {
+        font-size: 22px;
+    }
+
+    .noCreditImpact {
+        font-size: 20px;
+        width: 80vw;
+    }
+
+    .beforeLegend,
+    .legend {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,9 @@
+.financeTool {
+    width: 40vw;
+}
+
+@media screen and (min-width: 1024px) {
+    .financeTool {
+        width: 30vw;
+    }
+}
