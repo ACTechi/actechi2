@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './HomeSection.module.css'
-import GetEstimate from '../navbar/GetEstimate/GetEstimate'
+import GetEstimate from '../GetEstimate/GetEstimate'
 
 export default function HomeSection() {
     return (
