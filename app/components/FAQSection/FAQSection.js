@@ -1,45 +1,3 @@
-/* 'use client'
-import React, { useState } from 'react'
-import styles from './FAQSection.module.css'
-
-export default function FAQSection() {
-    const [active, setActive] = useState(-1);
-
-    const toggleHandler = (id) => () =>
-        setActive((active) => (active === id ? -1 : id));
-
-return (
-    <section className={styles.faq} id='faq'>
-        <p className={styles.title}>Frequently Asked Questions</p>
-        <div className={styles.screens}>
-            <div className={styles.leftScreen}>
-                <p className={styles.question} onClick={toggleHandler(1)}><img src='plus.png' alt='plus sign to see more info' className={styles.more}></img>Does AC TECHI open after-hours or on weekends?</p>
-                {active === 1 && <p className={styles.answer}>If you have an emergency with your HVAC equipment and you need any product
-                    while our store is closed, use our after-hours sales line (407) 242-0908. We will check
-                    our inventory online and someone of our staff will open the store to provide you
-                    with the products you need. <span className={styles.legend}>*Charges for this service will be applied.</span></p>}
-                <p className={styles.question} onClick={toggleHandler(2)}><img src='plus.png' alt='plus sign to see more info' className={styles.more}></img>Do you offer any financing plan for technicians?</p>
-                {active === 2 && <p className={styles.answer}>Yes. We can make an agreement with technicians where they have up to three months
-                    to pay for a previously booked equipment. <span className={styles.legend}>*Some restrictions could apply.</span></p>}
-                <p className={styles.question} onClick={toggleHandler(3)}><img src='plus.png' alt='plus sign to see more info' className={styles.more}></img>Do you provide delivery service?</p>
-                {active === 3 && <p className={styles.answer}>We offer delivery service for contractors depending on the total purchase amount.
-                    Ask for the service and we’ll check our availability according to the distance of your
-                    delivery. <span className={styles.legend}>*Some charges will apply.</span></p>}
-            </div>
-            <div className={styles.rightScreen}>
-                <p className={styles.question} onClick={toggleHandler(4)}><img src='plus.png' alt='plus sign to see more info' className={styles.more}></img>Do you offer any special treatment for building’s adminitrators?</p>
-                {active === 4 && <p className={styles.answer}>If you are a building’s administrator, we can give you consignment inventory
-                    and send you the bills periodically, after we have checked consumption and
-                    stock.<span className={styles.legend}>*Some restrictions will apply.</span></p>}
-                <p className={styles.question} onClick={toggleHandler(5)}><img src='plus.png' alt='plus sign to see more info' className={styles.more}></img>Can you provide help on air filter installation?</p>
-                {active === 5 && <p className={styles.answer}>AC Techi provides help on air filters installation to vacation resorts and
-                    multifamily buildings periodically in routes of installation and supply.</p>}
-            </div>
-        </div>
-    </section>
-)
-} */
-
 import Accordion from 'react-bootstrap/Accordion';
 import React from 'react'
 
@@ -47,34 +5,59 @@ import styles from './FAQSection.module.css'
 
 export default function FAQSection() {
     return (
-        <section>
-        <p className={styles.title}>Frequently Asked Questions</p>
-        <Accordion>
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>Rather than a virtual appoinment, I prefer an in-person appoinment</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="1">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
-    </section>
+        <section id='faqs'>
+            <p className={styles.title}>Frequently Asked Questions</p>
+            <Accordion>
+                <Accordion.Item eventKey="0">
+                    <Accordion.Header>Rather than a virtual appointment, I prefer an in person appointment at home, so that the technician is able to collect all of the necessary information. Can l schedule an at home appointment free of charge?</Accordion.Header>
+                    <Accordion.Body>
+                        <p>Yes!</p>
+                        <p>Our estimates are free of charge and our consultant will make sure you receive a high quality service experience.</p>
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1">
+                    <Accordion.Header>What information do you need in order to provide me with an estimate? And how long will the virtual appointment take?</Accordion.Header>
+                    <Accordion.Body>
+                        <p>The information we need is easy to collect and it can be obtained in less than half an hour.</p>
+                        <p>Usually, we need:</p>
+                        <ul>
+                            <li>Pictures of the electrical breakers</li>
+                            <li>Pictures of the stickers from both units that show the model and serial.</li>
+                            <li>Pictures of the electrical disconnect and the A/C whip</li>
+                            <li>Pictures  of the condenser concrete pad</li>
+                            <li>Pictures of the air handler unit and it's base</li>
+                            <li>Pictures of the air filter housing</li>
+                        </ul>
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="2">
+                    <Accordion.Header>Can you provide me with an estimate prior to pre-qualifying for financing?</Accordion.Header>
+                    <Accordion.Body>
+                        <p>Yes!</p>
+                        <p>We will be ready to provide you with an estimate as soon as we finish collecting all of the necessary information.</p>
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="3">
+                    <Accordion.Header>Besides financing, what other methods of payment do you take?</Accordion.Header>
+                    <Accordion.Body>
+                        <p>We can process payments via credit or debit card, Zelle transfer, or we can send an electronic payment request via QuickBooks.</p>
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="4">
+                    <Accordion.Header>Can AC Techi provide me with an estimate to update/replace my house's ductwork?</Accordion.Header>
+                    <Accordion.Body>
+                        <p>Yes!</p>
+                        <p>At AC Techi we take pride in professionally performing ductwork replacement/updating at affordable prices.</p>
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="5">
+                    <Accordion.Header>Do you have special prices for new construction, house flipping, property managers, etc?</Accordion.Header>
+                    <Accordion.Body>
+                        <p>Yes!</p>
+                        <p>At AC Techi we have professional estimators that will take care of analyzing your project, review your plans and energy calcs, and provide you with the requested proposal</p>
+                    </Accordion.Body>
+                </Accordion.Item>
+            </Accordion>
+        </section>
     )
 }
