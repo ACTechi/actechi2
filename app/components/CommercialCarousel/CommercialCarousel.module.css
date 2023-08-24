@@ -1,0 +1,14 @@
+.carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    color: var(--main-green-color);
+    margin: 1rem 0;
+}
+
+.bg {
+    background-color: grey;
+}
