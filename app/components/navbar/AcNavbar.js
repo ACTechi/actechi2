@@ -11,7 +11,7 @@ function AcNavbar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary" fixed="top">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="#home" className={styles.brand}>
         <img
               alt="AC Techi"
               src="logo.png"
@@ -19,6 +19,8 @@ function AcNavbar() {
               height="91.43"
               className="d-inline-block align-top"
             />{' '}
+            <p className={styles.moto}>Your Air Conditioning and Heating</p>
+            <p className={styles.moto}>Company in Orlando, FL</p>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
