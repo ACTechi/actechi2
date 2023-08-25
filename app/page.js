@@ -1,4 +1,5 @@
 'use client'
+import AcFooter from './components/AcFooter/AcFooter'
 import FAQSection from './components/FAQSection/FAQSection'
 import FinancingSection from './components/FinancingSection/FinancingSection'
 import HomeSection from './components/HomeSection/HomeSection'
@@ -14,6 +15,7 @@ export default function Home() {
     <ServiceSection />
     <FinancingSection />
     <FAQSection />
+    <AcFooter />
     </main>
       )
 }
