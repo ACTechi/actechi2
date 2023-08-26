@@ -10,23 +10,23 @@ export default function AcFooter() {
                 </div>
 
                 <div>
-                    <a href='' className='me-4 text-reset'>
-                        <MDBIcon fab icon="facebook-f" />
+                    <a href='' className='me-4 text-reset fs-2 text'>
+                        <MDBIcon fab icon="facebook-f" style={{ color:'#FFFFFF' }}/>
                     </a>
-                    <a href='' className='me-4 text-reset'>
-                        <MDBIcon fab icon="twitter" />
+                    <a href='' className='me-4 text-reset fs-2 text'>
+                        <MDBIcon fab icon="twitter" style={{ color:'#FFFFFF' }}/>
                     </a>
-                    <a href='' className='me-4 text-reset'>
-                        <MDBIcon fab icon="google" />
+                    <a href='' className='me-4 text-reset fs-2 text'>
+                        <MDBIcon fab icon="google" style={{ color:'#FFFFFF' }}/>
                     </a>
-                    <a href='' className='me-4 text-reset'>
-                        <MDBIcon fab icon="instagram" />
+                    <a href='' className='me-4 text-reset fs-2 text'>
+                        <MDBIcon fab icon="instagram"  style={{ color:'#FFFFFF' }}/>
                     </a>
-                    <a href='' className='me-4 text-reset'>
-                        <MDBIcon fab icon="linkedin" />
+                    <a href='' className='me-4 text-reset fs-2 text'>
+                        <MDBIcon fab icon="linkedin" style={{ color:'#FFFFFF' }}/>
                     </a>
-                    <a href='' className='me-4 text-reset'>
-                        <MDBIcon fab icon="github" />
+                    <a href='' className='me-4 text-reset fs-2 text'>
+                        <MDBIcon fab icon="github" style={{ color:'#FFFFFF' }}/>
                     </a>
                 </div>
             </section>
@@ -46,50 +46,36 @@ export default function AcFooter() {
                         </MDBCol>
 
                         <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-                            <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
+                            <h6 className='text-uppercase fw-bold mb-4'>Useful Links</h6>
                             <p>
-                                <a href='#!' className='text-reset'>
-                                    Angular
+                                <a href='#home' className='text-reset'>
+                                    Home
                                 </a>
                             </p>
                             <p>
-                                <a href='#!' className='text-reset'>
-                                    React
+                                <a href='#services' className='text-reset'>
+                                    Services
                                 </a>
                             </p>
                             <p>
-                                <a href='#!' className='text-reset'>
-                                    Vue
+                                <a href='#financing' className='text-reset'>
+                                    Fanancing
                                 </a>
                             </p>
                             <p>
-                                <a href='#!' className='text-reset'>
-                                    Laravel
+                                <a href='#faqs' className='text-reset'>
+                                    FAQs
                                 </a>
                             </p>
                         </MDBCol>
 
                         <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
-                            <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
+                            <h6 className='text-uppercase fw-bold mb-4'>Business Hours</h6>
                             <p>
-                                <a href='#!' className='text-reset'>
-                                    Pricing
-                                </a>
+                                    Monday - Friday
                             </p>
                             <p>
-                                <a href='#!' className='text-reset'>
-                                    Settings
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Orders
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Help
-                                </a>
+                                    9:00 am - 5:00 pm
                             </p>
                         </MDBCol>
 
@@ -114,11 +100,8 @@ export default function AcFooter() {
                 </MDBContainer>
             </section>
 
-            <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-                © 2021 Copyright:
-                <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-                    MDBootstrap.com
-                </a>
+            <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)', color:'#FFFFFF' }}>
+                © 2023 AC Techi
             </div>
         </MDBFooter>
     );
