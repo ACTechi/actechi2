@@ -1,0 +1,31 @@
+.map {
+    margin-bottom: 0.5rem;
+}
+
+.anchor {
+    text-decoration: none;
+    color: var(--main-white-color);
+}
+
+.anchor:hover {
+    color: var(--main-white-color);
+}
+
+.logoDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+}
+
+.logoDiv img {
+    margin-bottom: 0.5rem;
+}
+
+.logoDiv p {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
