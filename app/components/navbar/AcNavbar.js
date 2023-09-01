@@ -30,7 +30,7 @@ function AcNavbar() {
             <Nav.Link href="#faqs"><p className={styles.link}>FAQs</p></Nav.Link>
             <NavDropdown title="Contac Us" id="basic-nav-dropdown" className={styles.link}>
               <NavDropdown.Item href="tel:+14072420908" className={styles.contact}><img src='phoneHome.png' alt='call us' className={styles.icon}></img>Call Us</NavDropdown.Item>
-              <NavDropdown.Item href="https://calendly.com/actechi/30min" className={styles.contact}>
+              <NavDropdown.Item href="https://calendly.com/actechi/30min" className={styles.contact} target='_blank'>
                 <img src='googleMeet.png' alt='schedule a call' className={styles.icon}></img>
                 Schedule a call
               </NavDropdown.Item>
