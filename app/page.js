@@ -15,7 +15,7 @@ export default function Home() {
     <ServiceSection />
     <FinancingSection />
     <FAQSection />
-    {/* <AcFooter /> */}
+    <AcFooter />
     </main>
       )
 }
