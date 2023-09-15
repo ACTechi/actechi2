@@ -1,48 +1,21 @@
 'use client'
 import React, { useState } from 'react'
-import { useForm, Controller } from "react-hook-form";
-import Select from "react-select";
-import makeAnimated from 'react-select/animated';
+
 import styles from './MainForm.module.css'
-import { whatOptions, whenOptions, whereOutdoorOptions, whoOptions, whyOptions } from '../../../../data/options';
-import { gruoupOptions } from '../../../../data/options';
-import Link from 'next/link';
-/* import addEstimateData from '@/firebase/firestore/addData'; */
-/* import { v4 as uuidv4 } from 'uuid' */
+
 
 export default function MainForm() {
-    const [successMsg, setSuccessMsg] = useState('')
-    const {
-        register,
-        control,
-        handleSubmit,
-        formState: { errors },
-        reset
-    } = useForm();
+    const [validate, setValidate] = useState(false);
 
-    /* const estimateId = uuidv4(); */
-
-    const animatedComponents = makeAnimated();
-
-    /* const onSubmit = async (data) => {
-        data.userId = estimateId;
-        data.status = 'pending';
-        data.date = Date.now();
-        console.log(data);
-        const { result, error } = await addEstimateData(data);
-        if (error) {
-            console.log(error)
+    const handleSubmit = (event) => {
+        const form = event.currentTarget;
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
         }
-        console.log(result)
-        reset()
-        setSuccessMsg('Your information was submitted sucessfully')
+
+        setValidate(true);
     };
- */
-    const onSubmit = (data) => {
-        console.log(data);
-        reset();
-        setSuccessMsg('Your information was submitted sucessfully')
-    }
     return (
         <section className={styles.mainFormSection}>
             <div className={styles.title}>
@@ -53,7 +26,7 @@ export default function MainForm() {
                 </div>
                 <img src='/info-02.png' alt='path'></img>
             </div>
-            <form action="https://formsubmit.co/tech.actechi@gmail.com" method="POST">
+            <form action="https://formsubmit.co/tech.actechi@gmail.com" method="POST" novalidate validate={validate} onSubmit={handleSubmit} className={styles.form}>
                 <div class="mb-3">
                     <p>When: <span>(choose one)</span></p>
                     <select class="form-select" aria-label="Default select example" name='when'>
@@ -124,40 +97,65 @@ export default function MainForm() {
                 <div class="mb-3">
                     <p>Who: <span>(choose as many as apply)</span></p>
                     <div class="form-check form-check-inline">
-                        <input name='who1' class="form-check-input" type="checkbox" id="indoor" value="Indoor"></input>
-                        <label class="form-check-label" for="indoor">Indoor</label>
+                        <input name='who1' class="form-check-input" type="checkbox" id="licensed" value="Licensed A/C Pros"></input>
+                        <label class="form-check-label" for="licensed">Licensed A/C Pros</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input name='who2' class="form-check-input" type="checkbox" id="outdoor" value="Outdoor"></input>
-                        <label class="form-check-label" for="outdoor">Outdoor</label>
+                        <input name='who2' class="form-check-input" type="checkbox" id="insured" value="Insured"></input>
+                        <label class="form-check-label" for="insured">Insured</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input name='who3' class="form-check-input" type="checkbox" id="ground" value="Ground over pad"></input>
-                        <label class="form-check-label" for="ground">Outdoor</label>
+                        <input name='who3' class="form-check-input" type="checkbox" id="longevity" value="10 + year in business"></input>
+                        <label class="form-check-label" for="longevity">10 + year in business</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input name='who4' class="form-check-input" type="checkbox" id="roof" value="Roof Top"></input>
-                        <label class="form-check-label" for="roof">Roof Top</label>
+                        <input name='who4' class="form-check-input" type="checkbox" id="delVal" value="Delivering great value"></input>
+                        <label class="form-check-label" for="delVal">Delivering great value</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input name='who5' class="form-check-input" type="checkbox" id="wall" value="Wall on brackets"></input>
-                        <label class="form-check-label" for="wall">Wall on brackets</label>
+                        <input name='who5' class="form-check-input" type="checkbox" id="proIntal" value="Professional installers"></input>
+                        <label class="form-check-label" for="proInstal">Professional installers</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input name='who5' class="form-check-input" type="checkbox" id="aff" value="Affordable prices"></input>
+                        <label class="form-check-label" for="aff">Affordable prices</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input name='who5' class="form-check-input" type="checkbox" id="avFinancing" value="Available financing"></input>
+                        <label class="form-check-label" for="avFinancing">Available financing</label>
+                    </div>
+                </div>
+                <p className={styles.textPF}>If you choose to be contacted, just drop at least one contact method</p>
+                <p className={styles.textPS}>You will not be contacted for unsolicited services</p>
+                <div class="mb-3">
+                    <label for="validationCustom01" class="form-label">First and last names <span className={styles.required}>required</span></label>
+                    <input name="complete-names" type="text" class="form-control" id="validationCustom01" placeholder='What is your name?' required></input>
+                    <div class="invalid-feedback">
+                        Please enter your name.
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name='email'></input>
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    <label for="validationCustom02" class="form-label">Contact Info <span className={styles.required}>required</span></label>
+                    <input name="contact-info" type="text" class="form-control" id="validationCustom02" placeholder='How can we contact you?' required></input>
+                    <div class="invalid-feedback">
+                        Please enter one way we can get in contact with you.
+                    </div>
                 </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1" name='checked'></input>
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                <div class="mb-3">
+                    <label for="validationCustom03" class="form-label">Current System Capacity (Ton)</label>
+                    <input name="current-system-capacity" type="number" class="form-control" id="validationCustom03" placeholder='Current System Capacity (Ton)'></input>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="mb-3">
+                    <label for="validationCustom04" class="form-label">Conditioned Area (sq-ft)</label>
+                    <input name="conditioned-area" type="number" class="form-control" id="validationCustom04" placeholder='Conditioned Area (sq-ft)'></input>
+                </div>
+                <p>If you do not know your property conditioned, we will do the search for you <span className={styles.textT}>without going to your location</span></p>
+                <div class="mb-3">
+                    <label for="validationCustom05" class="form-label">Address</label>
+                    <input name="adress" type="text" class="form-control" id="validationCustom05" placeholder='Address'></input>
+                </div>
+                <button type="submit" class="btn btn-primary" className={styles.buttonSubmit}>Submit</button>
             </form>
-            <div className={styles.backDiv}>
-                {successMsg && <Link href='/'><button className={styles.buttonBack}>back to home</button></Link>}
-            </div>
         </section>
     )
 }

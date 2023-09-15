@@ -3,16 +3,20 @@
     flex-direction: column;
     margin: 2rem 0;
 }
-.title, .titleP {
+
+.title,
+.titleP {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .title img {
     width: 90vw;
     margin-bottom: 1rem;
 }
+
 .firstT {
     color: var(--main-black-color);
 }
@@ -39,8 +43,9 @@
 .form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /*     justify-content: center;
+    align-items: center; */
+    margin: 0 10%;
 }
 
 .select {
@@ -48,10 +53,8 @@
     margin-bottom: 1rem;
 }
 
-.textPF{
-    text-align: justify;
-    width: 90vw;
-    margin-bottom: 0.5rem;
+.textPF {
+    margin-top: 3rem;
 
 }
 
@@ -79,24 +82,19 @@
     width: 80vw;
 }
 
-.required, .errorMsg {
+.required,
+.errorMsg {
     color: red;
     font-size: 14px;
 }
 
 .textT {
-    font-size: 14px;
-    width: 90vw;
-    text-align: justify;
-    margin-bottom: 0.5rem;
-}
-
-.textT span {
     font-weight: bold;
     color: var(--main-black-color);
 }
 
 .buttonSubmit {
+    align-self: center;
     text-align: center;
     width: 25vw;
     height: 5vh;
@@ -142,7 +140,9 @@
     .inputDiv input {
         height: 3.5vh;
     }
-    .buttonSubmit, .buttonBack{
+
+    .buttonSubmit,
+    .buttonBack {
         width: 18vw;
         font-size: 14px;
     }
@@ -154,23 +154,33 @@
         align-items: center;
         justify-content: space-evenly;
     }
+
     .title img {
         width: 55vw;
     }
-    .firstT, .secondT, .thirdT {
+
+    .firstT,
+    .secondT,
+    .thirdT {
         font-size: 18px;
-        margin:0 0 1rem 1rem;
+        margin: 0 0 1rem 1rem;
     }
+
     .w {
         font-size: 22px;
     }
-    .select, .inputDiv input {
+
+    .select,
+    .inputDiv input {
         width: 50vw;
     }
+
     .textPF {
         margin-top: 2rem;
     }
-    .buttonSubmit, .buttonBack {
+
+    .buttonSubmit,
+    .buttonBack {
         width: 12vw;
         height: 8vh;
         font-size: 16px;
