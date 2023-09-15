@@ -31,7 +31,7 @@ export default function MainForm() {
                     <p>When: <span>(choose one)</span></p>
                     <select class="form-select" aria-label="Default select example" name='when'>
                         <option selected>Select on option</option>
-                        <option value="It's needed now">It's needed now</option>
+                        <option value="It's needed now">It&apos;s needed now</option>
                         <option value="02 week later">02 week later</option>
                         <option value="Shopping around (01 month)">Shopping around (01 month)</option>
                         <option value="Planning in advance">Planning in advance</option>

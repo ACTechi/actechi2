@@ -25,7 +25,7 @@ export default function FAQSection() {
                             <li>Pictures of the stickers from both units that show the model and serial.</li>
                             <li>Pictures of the electrical disconnect and the A/C whip</li>
                             <li>Pictures  of the condenser concrete pad</li>
-                            <li>Pictures of the air handler unit and it's base</li>
+                            <li>Pictures of the air handler unit and it&apos;s base</li>
                             <li>Pictures of the air filter housing</li>
                         </ul>
                     </Accordion.Body>
@@ -44,7 +44,7 @@ export default function FAQSection() {
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="4">
-                    <Accordion.Header>Can AC Techi provide me with an estimate to update/replace my house's ductwork?</Accordion.Header>
+                    <Accordion.Header>Can AC Techi provide me with an estimate to update/replace my house&apos;s ductwork?</Accordion.Header>
                     <Accordion.Body>
                         <p>Yes!</p>
                         <p>At AC Techi we take pride in professionally performing ductwork replacement/updating at affordable prices.</p>
