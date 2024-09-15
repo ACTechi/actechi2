@@ -1,15 +1,33 @@
 .moto {
     color: var(--main-grey-color);
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
     margin: 0;
     padding: 0;
+    font-weight: bold;
 }
 
 .brand {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+.contact {
+    font-weight: bolder;
+    color: var(--main-blue-color);
+}
+
+.icon {
+    width: 1rem;
+    margin-right: 1rem;
+}
+.completeMoto {
+    display: flex;
+    flex-direction: column;
+}
+.contactUs{
+    width: 100%;
+    justify-content: flex-end;
 }

@@ -135,6 +135,17 @@
     border-radius: var(--border-radius);
     font-size: 12px;
 }
+.backButton{
+    color: var(--main-green-color);
+    text-decoration: none;
+    text-align: left;
+}
+.backButton:hover{
+    color: var(--main-green-color)
+}
+.backArrowImg{
+    width: 4.5vw;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .inputDiv input {
@@ -145,6 +156,9 @@
     .buttonBack {
         width: 18vw;
         font-size: 14px;
+    }
+    .backArrowImg{
+        width: 3vw;
     }
 }
 
@@ -184,5 +198,8 @@
         width: 12vw;
         height: 8vh;
         font-size: 16px;
+    }
+    .backArrowImg{
+        width: 2vw;
     }
 }

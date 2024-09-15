@@ -18,8 +18,10 @@ function AcNavbar() {
             height="91.43"
             className="d-inline-block align-top"
           />{' '}
+          <div className={styles.completeMoto}>
           <p className={styles.moto}>Your Air Conditioning and Heating</p>
           <p className={styles.moto}>Company in Orlando, FL</p>
+          </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -30,7 +32,7 @@ function AcNavbar() {
             <Nav.Link href="#faqs"><p className={styles.link}>FAQs</p></Nav.Link>
             <NavDropdown title="Contac Us" id="basic-nav-dropdown" className={styles.link}>
               <NavDropdown.Item href="tel:+14072420908" className={styles.contact}><img src='phoneHome.png' alt='call us' className={styles.icon}></img>Call Us</NavDropdown.Item>
-              <NavDropdown.Item href="https://calendly.com/actechi/30min" className={styles.contact} target='_blank'>
+              <NavDropdown.Item href="https://calendar.app.google/2baWBm8eQNzo7KRz5" className={styles.contact} target='_blank'>
                 <img src='googleMeet.png' alt='schedule a call' className={styles.icon}></img>
                 Schedule a call
               </NavDropdown.Item>

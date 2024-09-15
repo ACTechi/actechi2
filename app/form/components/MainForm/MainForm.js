@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 
 import styles from './MainForm.module.css'
+import Button from 'react-bootstrap/Button';
 import { Form } from 'react-bootstrap';
 
 
@@ -19,6 +20,7 @@ export default function MainForm() {
     };
     return (
         <section className={styles.mainFormSection}>
+            <Button variant="link" className={styles.backButton} href='/'><img src='back-arrow.png' alt='back arrow' className={styles.backArrowImg}></img>Back to Home</Button>
             <div className={styles.title}>
                 <div className={styles.titleP}>
                     <p className={styles.firstT}>Customers that answer </p>
