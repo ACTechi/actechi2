@@ -21,7 +21,7 @@ export default function MainForm() {
     };
     return (
         <section className={styles.mainFormSection}>
-            <Button variant="link" className={styles.backButton} href='/'><Image src='/back-arrow.png' alt='back arrow' width={24} height={24} />Back to Home</Button>
+            <Button variant="link" className={styles.backButton} href='/'><Image src='/back-arrow.jpg' alt='back arrow' width={24} height={24} />Back to Home</Button>
             <div className={styles.title}>
                 <div className={styles.titleP}>
                     <p className={styles.firstT}>Customers that answer </p>
