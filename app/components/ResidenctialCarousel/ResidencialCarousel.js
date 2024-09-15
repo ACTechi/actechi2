@@ -10,7 +10,7 @@ export default function ResidencialCarousel() {
         <h2 className={styles.title}>Residential</h2>
         <Carousel pause keyboard touch slide={false}>
             <Carousel.Item>
-            <Image src='/Central-split-system-2024.JPG' alt='Split System' width={400} height={400} />
+            <Image src='/Central-split-system-2024.jpeg' alt='Split System' width={400} height={400} />
                 <Carousel.Caption className={styles.bg}>
                 <h3>Central Split System (Air Conditioner or Heat Pump)</h3>
                 </Carousel.Caption>
@@ -22,7 +22,7 @@ export default function ResidencialCarousel() {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-            <Image src='/minisplit-residential-2024.JPG' alt='Mini Split System' width={400} height={400}/>
+            <Image src='/minisplit-residential-2024.jpeg' alt='Mini Split System' width={400} height={400}/>
                 <Carousel.Caption className={styles.bg}>
                     <h3>Mini Split</h3>
                 </Carousel.Caption>
@@ -34,7 +34,7 @@ export default function ResidencialCarousel() {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-            <Image src='/rooftpo-unit-2024.JPG' alt='Rooftop units' width={400} height={400} />
+            <Image src='/rooftpo-unit-2024.jpeg' alt='Rooftop units' width={400} height={400} />
                 <Carousel.Caption className={styles.bg}>
                     <h3>Rooftop units</h3>
                 </Carousel.Caption>
