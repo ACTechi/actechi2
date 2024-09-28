@@ -11,7 +11,7 @@ export default function HomeSection() {
                 <img src='banner-with-dog.jpg' alt='person enjoying their ac' className={styles.img}></img>
                 <p className={styles.question}>Have a project in mind?</p>
                 <p className={styles.explanation}>Get an estimate with AC Techi, professionals you can trust for your A/C installation.</p>
-                <p className={styles.explanation} id={styles.free}>It's free and easier than ever.</p>
+                <p className={styles.explanation} id={styles.free}>It&apos;s free and easier than ever.</p>
                 <GetEstimate />
             </div>
             <img src='banner-with-dog.jpg' alt='person enjoying their ac' className={styles.imgDown}></img>
