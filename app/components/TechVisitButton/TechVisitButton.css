@@ -1,0 +1,11 @@
+.btn-outline-success {
+    background-color: var(--main-white-color);
+    color: var(--main-green-color);
+    border: solid 1px;
+}
+
+.btn-outline-success:hover {
+    box-shadow: 3px 7px 4px 0px #00000040;
+    background-color: var(--main-green-color);
+    color: var(--main-white-color);
+}

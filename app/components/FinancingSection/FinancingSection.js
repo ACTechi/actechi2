@@ -8,7 +8,7 @@ export default function FinancingSection() {
         <section className={styles.financing} id='financing'>
             <p className={styles.title}>Get PREQUALIFY for Financing</p>
             <p className={styles.green}>FILL A SHORT APPLICATION AND GET A QUICK DECISION</p>
-            <p className={styles.noCreditImpact}>Click the link and check your financing options with <span className={styles.bold}>NO CREDIT IMPACT</span> 100% paperless</p>
+            <p className={styles.noCreditImpact}>Click on the image and check your financing options with <span className={styles.bold}>NO CREDIT IMPACT</span> 100% paperless</p>
             <div className={styles.image}>
                 <AcWisestack />
                {/* <AcSnap />*/}

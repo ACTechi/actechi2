@@ -1,5 +1,6 @@
 import Accordion from 'react-bootstrap/Accordion';
 import React from 'react'
+import TechVisitButton from '../TechVisitButton/TechVisitButton'
 
 import styles from './FAQSection.module.css'
 
@@ -55,6 +56,13 @@ export default function FAQSection() {
                     <Accordion.Body>
                         <p>Yes!</p>
                         <p>At AC Techi we have professional estimators that will take care of analyzing your project, review your plans and energy calcs, and provide you with the requested proposal</p>
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="6">
+                    <Accordion.Header>Is your air conditioning malfunctioning and you require a technician visit?</Accordion.Header>
+                    <Accordion.Body>
+                        <p>Get the service your system is needing.</p>
+                        <TechVisitButton />
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>

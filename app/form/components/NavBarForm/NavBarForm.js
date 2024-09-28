@@ -24,16 +24,16 @@ function NavBarForm() {
                             <p className={styles.moto}>Company in Orlando, FL</p>
                         </div>
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav" className={styles.contactUs}>
-                        <Nav>
+                    {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav" className={styles.contactUs}> */}
+                        <Nav className={styles.contactUs}>
                             <Nav.Link href="tel:+14072420908" className={styles.contact}><img src='phoneHome.png' alt='call us' className={styles.icon}></img>Call Us</Nav.Link>
                             <Nav.Link href="https://calendar.app.google/2baWBm8eQNzo7KRz5" className={styles.contact} target='_blank'>
                                 <img src='googleMeet.png' alt='schedule a call' className={styles.icon}></img>
                                 Schedule a call
                             </Nav.Link>
                         </Nav>
-                    </Navbar.Collapse>
+                    {/* </Navbar.Collapse> */}
                 </Container>
             </Navbar>
         </>

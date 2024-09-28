@@ -3,6 +3,7 @@ import styles from './ServiceSection.module.css'
 import GetEstimate from '../GetEstimate/GetEstimate'
 import ResidencialCarousel from '../ResidenctialCarousel/ResidencialCarousel'
 import CommercialCarousel from '../CommercialCarousel/CommercialCarousel'
+import TechVisitButton from '../TechVisitButton/TechVisitButton'
 
 
 export default function ServiceSection() {
@@ -15,6 +16,11 @@ export default function ServiceSection() {
                 <CommercialCarousel />
             </div>
             <GetEstimate />
+            <div className={styles.techVisitDiv}>
+                <p>Is your air conditioning malfunctioning?</p>
+                <p>Get the service your system is needing.</p>
+                <TechVisitButton />
+            </div>
         </section>
     )
 }

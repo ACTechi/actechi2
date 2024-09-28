@@ -27,7 +27,23 @@
     display: flex;
     flex-direction: column;
 }
-.contactUs{
+/* .contactUs{
     width: 100%;
     justify-content: flex-end;
+} */
+.contactUs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .contactUs{
+        justify-content: space-evenly;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .contactUs{
+        justify-content: space-evenly;
+    }
+  }
