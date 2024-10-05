@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 export default function TechVisitButton() {
   return (
     <>
-            <Button variant="outline-success" className={styles.button} href="tel:+14072420890">Request an A/C Tech Visiting</Button>{' '}
+            <Button variant="outline-success" className={styles.button} href="tel:+14074516655">Request an A/C Tech Visiting</Button>{' '}
         </>
   )
 }

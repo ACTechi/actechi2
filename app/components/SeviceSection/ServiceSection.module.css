@@ -32,6 +32,18 @@
     margin-bottom: 10%;
 }
 
+.techVisitDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 3rem;
+    box-shadow:0 0 20px 0 #00488784;;
+}
+
+.acRepairP {
+    margin-top: 1rem;
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .servicesTitle {
         font-size: 24px;
@@ -60,10 +72,4 @@
     .Title {
         font-size: 22px;
     }
-}
-.techVisitDiv{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
 }

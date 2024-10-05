@@ -18,8 +18,9 @@ export default function ServiceSection() {
             <GetEstimate />
             <div className={styles.techVisitDiv}>
                 <p>Is your air conditioning malfunctioning?</p>
-                <p>Get the service your system is needing.</p>
-                <TechVisitButton />
+                <p>Get the service your system is needing. </p>
+                <TechVisitButton /> 
+                <p className={styles.acRepairP}>and get your AC repaired</p>
             </div>
         </section>
     )

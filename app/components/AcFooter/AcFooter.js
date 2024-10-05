@@ -19,7 +19,7 @@ export default function AcFooter() {
                     <a href='https://goo.gl/maps/c1d3KRTTGKzyhPXj9?coh=178573&entry=tt' className='me-4 text-reset fs-2 text' target='_blank'>
                         <img src='googlemapsIcon.png' alt='google map' className={styles.map}></img>
                     </a>
-                    <a href="https://api.whatsapp.com/send/?phone=14072420908&text=I'm%20interested%20in%20more%20information%20about%20your%20services,%20please&type=phone_number&app_absent=0" className='me-4 text-reset fs-2 text' target='_blank'>
+                    <a href="https://api.whatsapp.com/send/?phone=13219725978&text=I'm%20interested%20in%20more%20information%20about%20your%20services,%20please&type=phone_number&app_absent=0" className='me-4 text-reset fs-2 text' target='_blank'>
                         <img src='whatsapp.png' alt='google map' className={styles.map}></img>
                     </a>
                     <a href='https://www.facebook.com/ac.techi.7' className='me-4 text-reset fs-2 text' target='_blank'>
