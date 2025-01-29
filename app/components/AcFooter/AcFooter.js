@@ -104,7 +104,7 @@ export default function AcFooter() {
             </section>
             <div className='text-center p-4 d-flex justify-content-around' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)', color: '#FFFFFF' }}>
                 <a href='https://drive.google.com/file/d/1310s56y_hWQRz8bkI7fmq9sIPKfdtr0G/view?usp=sharing' className={styles.anchor} target='_blank'>Private Policy</a>
-                <p className={styles.links}>© 2023 AC Techi</p>
+                <p className={styles.links}>© 2025 AC Techi</p>
                 <p className={styles.links}>Use of this site is subject to our <a href='https://drive.google.com/file/d/1v7ztLT-Lx-Unp7mYPH_RzJClRMK6LEvL/view?usp=sharing' className={styles.anchor} target='_blank'>Terms of Use</a></p>
             </div>
         </footer>
