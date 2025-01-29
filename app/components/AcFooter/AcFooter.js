@@ -10,7 +10,7 @@ import styles from './AcFooter.module.css'
 export default function AcFooter() {
     return (
         <footer className='text-center text-lg-start text-muted' style={{ backgroundColor: '#77777A' }}>
-            <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom align-items-center'>
+            <section className='d-flex justify-content-between justify-content-lg-between p-4 border-bottom align-items-center'>
                 <BBBAcreditation />
                 <div className='me-5 d-none d-lg-block d-flex align-items-center'>
                     <span className='text-light'>Get connected with us on social networks:</span>
